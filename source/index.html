@@ -9,14 +9,31 @@
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
 </head>
 <body>
-  <div style="display:none">
-    <include src="build/img/sprite.svg"></include>
-  </div>
-  <header>
-
+  <!--<div style="display:none">-->
+  <!--  <include src="build/img/sprite.svg"></include>-->
+  <!--</div>-->
+  <header class="main-header">
+    <nav class="main-nav main-nav--opened main-nav--nojs">
+      <div class="main-nav__title-wrapper">
+        <h1 class="main-nav__title">Круизы в Антарктику</h1>
+        <p class="main-nav__title-desription">Волшебный мир айсбергов и пингвинов</p>
+      </div>
+      <a class="main-nav__logo">
+        <img class="main-nav__logo-image" src="img/logo-desktop.png" width="70" height="38" alt="Логотип круизной компании">
+      </a>
+      <button type="button" class="main-nav__toggle">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">Преимущества</li>
+          <li class="main-nav__item">Направления</li>
+          <li class="main-nav__item">Ближайшие круизы</li>
+          <li class="main-nav__item">Контакты</li>
+        </ul>
+      </div>
+    </nav>
   </header>
-  <script>
-      
-  </script>
+  <script src="js/toggleButton.js"></script>
 </body>
 </html>
