@@ -1,7 +1,7 @@
 .main-nav {
   display: flex;
   flex-wrap: wrap;
-  color: #ffffff;
+  color: #F9FBFD;
 }
 
 .main-nav__logo {
@@ -13,8 +13,8 @@
 }
 
 .main-nav__title-wrapper {
-  padding-top: 210px;
-  padding-left: 70px;
+  padding-top: 199px;
+  padding-left: 95px;
   width: 100%;
   order: 3;
 }
@@ -24,6 +24,7 @@
   line-height: 65.83px;
   font-weight: 700;
   margin: 0;
+  letter-spacing: 0.01px;
 }
 
 .main-nav__title-description {
@@ -31,6 +32,7 @@
   line-height: 24.38px;
   font-weight: 400;
   margin: 0;
+  margin-top: 11px;
   order: 3;
 }
 
@@ -39,7 +41,7 @@
 }
 
 .main-nav__wrapper {
-  width: 630px;
+  width: 626px;
   margin-left: auto;
   align-self: center;
 }
@@ -73,7 +75,7 @@
   }
 
   .main-nav__wrapper {
-    width: 530px;
+    width: 526px;
   }
 
   .main-nav__list {
@@ -86,6 +88,7 @@
   }
 
   .main-nav__title-wrapper {
+    padding-top: 219px;
     padding-left: 0;
   }
 
@@ -98,6 +101,7 @@
     font-size: 18px;
     line-height: 21.94px;
     font-weight: 400;
+    margin-top: 12px;
   }
 }
 
@@ -112,8 +116,27 @@
     height: 22px;
   }
 
+  .main-nav--opened .main-nav__logo-image {
+    position: relative;
+    z-index: 12;
+  }
+
   .main-nav__wrapper {
     display: none;
+    width: 100%;
+
+    background-color: #ffffff;
+  }
+
+  .main-nav--opened .main-nav__wrapper {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 65px;
+    padding-left: 15px;
+    padding-bottom: 58px;
+    z-index: 10;
   }
 
   .main-nav__toggle {
@@ -122,7 +145,7 @@
     margin-left: auto;
     width: 28px;
     height: 16px;
-
+    right: -3px;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -132,14 +155,48 @@
     content: "";
 
     position: absolute;
-    top: 5px;
-    right: 5px;
-  
+    top: 4px;
+    right: 3px;
+
     width: 25px;
     height: 2px;
-  
+
     background-color: #ffffff;
-    box-shadow: 0 8px 0 0 #ffffff;
+    box-shadow: 0 6px 0 0 #ffffff,
+    0 12px 0 0 #ffffff;
+  }
+
+  .main-nav--opened .main-nav__toggle {
+    top: 2px;
+    right: -4px;
+
+    width: 24px;
+    height: 20px;
+
+    z-index: 12;
+
+    &::before,
+    &::after {
+      content: "";
+
+      position: absolute;
+      top: 9px;
+      right: 1px;
+
+      width: 19px;
+      height: 2px;
+
+      background-color: #000000;
+    }
+
+    &::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+
+    &::after {
+      transform: rotate(-45deg);
+    }
   }
 
   .main-nav__list {
@@ -149,8 +206,34 @@
     color: #011C40;
   }
 
+  .main-nav--opened .main-nav__list {
+    flex-direction: column;
+  }
+
+  .main-nav--opened .main-nav__item {
+    margin-right: auto;
+    margin-left: 0;
+    margin-top: 23px;
+  }
+
+  .main-nav--opened .main-nav__item:nth-child(4) {
+    order: 1;
+  }
+
+  .main-nav--opened .main-nav__item:nth-child(1) {
+    order: 2;
+  }
+
+  .main-nav--opened .main-nav__item:nth-child(3) {
+    order: 3;
+  }
+
+  .main-nav--opened .main-nav__item:nth-child(4) {
+    order: 4;
+  }
+
   .main-nav__title-wrapper {
-    padding-top: 110px;
+    padding-top: 134px;
   }
 
   .main-nav__title {
