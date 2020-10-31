@@ -9,9 +9,9 @@
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
 </head>
 <body>
-  <!--<div style="display:none">-->
-  <!--  <include src="build/img/sprite.svg"></include>-->
-  <!--</div>-->
+  <div style="display:none">
+    <include src="build/img/sprite_auto.svg"></include>
+  </div>
   <header class="main-header">
     <nav class="main-nav main-nav--closed main-nav--nojs">
       <div class="main-nav__title-wrapper">
@@ -34,6 +34,47 @@
       </div>
     </nav>
   </header>
+  <footer class="main-footer">
+    <a class="main-footer__logo">
+      <img class="main-footer__logo-image" src="img/logo-desktop.png" width="70" height="38" alt="Логотип круизной компании">
+    </a>
+    <div class="main-footer__wrapper">
+      <ul class="main-footer__list">
+        <li class="main-footer__item">Преимущества</li>
+        <li class="main-footer__item">Направления</li>
+        <li class="main-footer__item">Ближайшие круизы</li>
+        <li class="main-footer__item">Контакты</li>
+      </ul>
+    </div>
+    <div class="main-footer__social-wrapper">
+      <ul class="main-footer__social social">
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20">
+              <use xlink:href="#icon-facebook"></use>
+            </svg>
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--instagram" href="#">
+            <svg x="0" y="0" width="20" height="20" viewBox="0 0 20 20" xml:space="preserve">
+              <use xlink:href="#icon-instagram"></use>
+            </svg>
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#">
+            <svg x="0" y="0" width="20" height="16" viewBox="0 0 20 16" xml:space="preserve">
+              <use xlink:href="#icon-twitter"></use>
+            </svg>
+            <span class="visually-hidden">Twitter</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
   <script src="js/toggleButton.js"></script>
 </body>
 </html>
