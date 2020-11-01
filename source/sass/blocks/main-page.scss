@@ -1,0 +1,24 @@
+.main-page {
+  min-height: 541px;
+  margin-left: 7.54%;
+  margin-right: 7.54%;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: $tablet-width-only) {
+  .main-page {
+    min-height: 464px;
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-page {
+    min-height: 464px;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+  }
+}

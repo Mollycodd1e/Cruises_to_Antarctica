@@ -34,6 +34,22 @@
       </div>
     </nav>
   </header>
+  <main class="main-page">
+    <section class="travel">
+      <div class="travel__wrapper">
+        <h2 class="travel__title">Путешествие на&nbsp;край&nbsp;Земли</h2>
+        <p class="travel__description">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
+      </div>
+      <picture class="travel__image-wrapper">
+        <source type="image/webp" media="(max-width: 767px)" srcset="img/pinguins_mobile.webp 1x, img/pinguins_mobile@2x.webp 2x">
+        <source type="image/webp" media="(max-width: 1023px)" srcset="img/pinguins_tablet.webp 1x, img/pinguins_tablet@2x.webp 2x">
+        <source type="image/webp" srcset="img/pinguins_desktop.webp 1x, img/pinguins_desktop@2x.webp 2x">
+        <source srcset="img/pinguins_mobile.jpg" media="(max-width: 767px)">
+        <source srcset="img/pinguins_tablet.jpg" media="(max-width: 1023px)">
+        <img class="travel__image" src="img/pinguins_desktop.jpg" srcset="img/pinguins_desktop@2x.jpg" width="560" height="301" alt="Фото пингвинов">
+      </picture>
+    </section>   
+  </main>  
   <footer class="main-footer">
     <a class="main-footer__logo">
       <img class="main-footer__logo-image" src="img/logo-desktop.png" width="70" height="38" alt="Логотип круизной компании">
