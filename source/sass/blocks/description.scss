@@ -1,0 +1,99 @@
+.description {
+  background-color: #011C40;
+}
+
+.description__name {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+
+  color: #F9FBFD;
+}
+
+.description__destination-title,
+.description__port-title,
+.description__time-title,
+.description__price-title {
+  margin: 0;
+  margin-top: 12px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 500;
+
+  color: #F9FBFD;
+}
+
+.description__destination,
+.description__port,
+.description__time,
+.description__price {
+  margin: 0;
+  margin-top: 1px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+
+  color: #D8D8D9;
+}
+
+.description__link {
+  display: block;
+  position: absolute;
+  width: 210px;
+  bottom: 27px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+
+  color: #011C40;
+  background-color: #F9FBFD;
+}
+
+@media (max-width: $tablet-width-only) {
+  .description {
+    background-color: #011C40;
+  }
+
+  .description__name {
+    margin: 0;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+
+    color: #F9FBFD;
+  }
+
+  .description__destination-title,
+  .description__port-title,
+  .description__time-title,
+  .description__price-title {
+    margin: 0;
+    margin-top: 12px;
+  }
+
+  .description__destination,
+  .description__port,
+  .description__time,
+  .description__price {
+    margin-top: 0;
+  }
+
+  .description__link {
+    width: 239px;
+    bottom: 35px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .description__link {
+    width: 220px;
+  }
+}
