@@ -7,7 +7,7 @@
   margin-right: 7.54%;
   align-items: center;
 
-  color: #011C40;
+  color: #011c40;
 }
 
 .travel__wrapper {
@@ -47,22 +47,19 @@
     padding-right: 30px;
   }
 
-  .travel__image-wrapper img {
+  .travel img {
     width: 324px;
     height: 264px;
   }
 
   .travel__title {
     margin-top: -3px;
-  }
-
-  .travel__description  {
-    margin-top: 16px;
-  }
-
-  .travel__title {
     font-size: 26px;
     line-height: 36.4px;
+  }
+
+  .travel__description {
+    margin-top: 16px;
   }
 }
 
@@ -79,13 +76,8 @@
     padding-right: 5px;
   }
 
-  .travel__image-wrapper {
-    width: 290px;
-    height: 186px;
+  .travel img {
     margin-top: 33px;
-  }
-
-  .travel__image-wrapper img {
     width: 290px;
     height: 186px;
   }

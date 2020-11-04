@@ -1,7 +1,7 @@
 .main-nav {
   display: flex;
   flex-wrap: wrap;
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .main-nav__logo {
@@ -163,7 +163,7 @@
 
     background-color: #ffffff;
     box-shadow: 0 6px 0 0 #ffffff,
-    0 12px 0 0 #ffffff;
+      0 12px 0 0 #ffffff;
   }
 
   .main-nav--opened .main-nav__toggle {
@@ -203,7 +203,7 @@
     font-size: 18px;
     line-height: 21.94px;
 
-    color: #011C40;
+    color: #011c40;
   }
 
   .main-nav--opened .main-nav__list {
@@ -228,7 +228,7 @@
     order: 3;
   }
 
-  .main-nav--opened .main-nav__item:nth-child(4) {
+  .main-nav--opened .main-nav__item:nth-child(2) {
     order: 4;
   }
 

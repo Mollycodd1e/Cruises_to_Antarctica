@@ -1,0 +1,245 @@
+.booking {
+  box-sizing: border-box;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  min-height: 555px;
+  background-image: url("../../img/form_background_desktop.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 555px;
+  background-color: #00bfff;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/form_background_desktop@2x.jpg");
+    background-size: 100% 555px;
+  }
+}
+
+.booking__form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.booking__wrapper {
+  align-self: center;
+  margin-top: -6px;
+}
+
+.booking__title {
+  margin: 0;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight: 700;
+
+  color: #011c40;
+}
+
+.booking__description {
+  margin: 0;
+  width: 352px;
+  font-size: 18px;
+  line-height: 27px;
+  margin-top: 7px;
+
+  color: #011c40;
+}
+
+.booking__form {
+  display: flex;
+  align-content: center;
+  width: 403px;
+  margin-left: 10.54%;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 50px;
+  flex-direction: column;
+  box-sizing: border-box;
+
+  background-color: #011c40;
+}
+
+.booking__form input::placeholder {
+  padding-left: 10px;
+  font-size: 14px;
+  line-height: 21px;
+
+  color: #011c40;
+}
+
+.booking__form-title {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 500;
+  margin-top: 44px;
+  padding: 0;
+
+  color: #f9fbfd;
+}
+
+.booking__input-name {
+  margin-top: 27px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.booking__input-phone {
+  margin-top: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.booking__input-mail {
+  margin-top: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.booking__checkbox-wrapper {
+  margin-top: 18px;
+  position: relative;
+}
+
+.booking__checkbox-wrapper label {
+  font-size: 10px;
+  line-height: 13px;
+  padding-left: 24px;
+
+  color: #f9fbfd;
+  cursor: pointer;
+}
+
+.booking__form .booking__input-checkbox:not(:checked) + label::before {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.booking__form .booking__input-checkbox:checked + label::after {
+  content: "";
+
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 18px;
+  height: 18px;
+
+  background-image: url("../../img/icon-mark.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 6px;
+  background-position: center center;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.booking__button {
+  margin-top: 26px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  padding-top: 9px;
+  padding-bottom: 9px;
+}
+
+@media (max-width: $tablet-width-only) {
+  .booking {
+    padding-top: 95px;
+    min-height: 805px;
+    background-image: url("../../img/form_background_tablet.jpg");
+    background-size: 100% 805px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/form_background_tablet@2x.jpg");
+      background-size: 100% 805px;
+    }
+  }
+
+  .booking__form-wrapper {
+    flex-direction: column;
+  }
+
+  .booking__wrapper {
+    align-self: center;
+    margin-top: -6px;
+  }
+
+  .booking__title {
+    font-size: 34px;
+    line-height: 51px;
+  }
+
+  .booking__description {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .booking__form {
+    margin: 0 auto;
+    margin-top: 51px;
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .booking {
+    padding-top: 65px;
+    min-height: 760px;
+    background-image: url("../../img/form_background_mobile.jpg");
+    background-size: 100% 760px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/form_background_mobile@2x.jpg");
+      background-size: 100% 760px;
+    }
+  }
+
+  .booking__wrapper {
+    align-self: center;
+    margin-top: -6px;
+  }
+
+  .booking__title {
+    font-size: 24px;
+    line-height: 31px;
+    width: 290px;
+    text-align: center;
+  }
+
+  .booking__description {
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 278px;
+  }
+
+  .booking__form {
+    width: 290px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 33px;
+    padding-bottom: 40px;
+  }
+
+  .booking__form-title {
+    line-height: 25px;
+    text-align: center;
+    margin-top: 36px;
+  }
+
+  .booking__checkbox-wrapper label {
+    display: inline-block;
+    line-height: 12px;
+    padding-left: 29px;
+  }
+
+  .booking__button {
+    margin-top: 24px;
+  }
+}

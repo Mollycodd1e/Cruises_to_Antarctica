@@ -8,7 +8,12 @@
   background-repeat: no-repeat;
   background-size: 100% 562px;
 
-  color: #011C40;
+  color: #011c40;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../../img/background_desktop@2x.jpg");
+    background-size: 100% 562px;
+  }
 }
 
 .advantages__title {
@@ -22,7 +27,6 @@
 .advantages__list {
   display: flex;
   padding: 0;
-  margin: 0;
   max-width: 1160px;
   margin: 0 auto;
   margin-top: 49px;
@@ -37,7 +41,8 @@
   padding-left: 30px;
   min-height: 241px;
   margin-left: 40px;
-  background-color: #F9FBFD;
+
+  background-color: #f9fbfd;
 }
 
 .advantages__item:nth-child(1) {
@@ -117,6 +122,11 @@
     min-height: 588px;
     background-image: url("../../img/background_tablet.jpg");
     background-size: 100% 588px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/background_tablet@2x.jpg");
+      background-size: 100% 588px;
+    }
   }
 
   .advantages__title {
@@ -127,7 +137,6 @@
   .advantages__list {
     display: flex;
     padding: 0;
-    margin: 0;
     max-width: 678px;
     margin: 0 auto;
     margin-top: 49px;
@@ -190,6 +199,11 @@
     min-height: 997px;
     background-image: url("../../img/background_mobile.jpg");
     background-size: 100% 997px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../../img/background_mobile@2x.jpg");
+      background-size: 100% 997px;
+    }
   }
 
   .advantages__title {

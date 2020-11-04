@@ -1,5 +1,5 @@
 .description {
-  background-color: #011C40;
+  background-color: #011c40;
 }
 
 .description__name {
@@ -8,7 +8,7 @@
   line-height: 27px;
   font-weight: 500;
 
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .description__destination-title,
@@ -21,7 +21,7 @@
   line-height: 20px;
   font-weight: 500;
 
-  color: #F9FBFD;
+  color: #f9fbfd;
 }
 
 .description__destination,
@@ -34,7 +34,7 @@
   line-height: 20px;
   font-weight: 400;
 
-  color: #D8D8D9;
+  color: #d8d8d9;
 }
 
 .description__link {
@@ -51,13 +51,13 @@
   text-decoration: none;
   cursor: pointer;
 
-  color: #011C40;
-  background-color: #F9FBFD;
+  color: #011c40;
+  background-color: #f9fbfd;
 }
 
 @media (max-width: $tablet-width-only) {
   .description {
-    background-color: #011C40;
+    background-color: #011c40;
   }
 
   .description__name {
@@ -66,7 +66,7 @@
     line-height: 27px;
     font-weight: 500;
 
-    color: #F9FBFD;
+    color: #f9fbfd;
   }
 
   .description__destination-title,
