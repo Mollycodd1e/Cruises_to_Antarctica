@@ -49,12 +49,19 @@
   width: 403px;
   margin-left: 10.54%;
   padding-left: 50px;
-  padding-right: 50px;
-  padding-bottom: 50px;
+  padding-right: 49px;
+  padding-bottom: 49px;
   flex-direction: column;
   box-sizing: border-box;
 
   background-color: #011c40;
+}
+
+.booking__fieldset {
+  margin: 0;
+  padding: 0;
+  margin-top: 45px;
+  border: none;
 }
 
 .booking__form input::placeholder {
@@ -76,18 +83,21 @@
 }
 
 .booking__input-name {
+  width: 295px;
   margin-top: 27px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
 .booking__input-phone {
+  width: 295px;
   margin-top: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
 .booking__input-mail {
+  width: 295px;
   margin-top: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
@@ -138,6 +148,7 @@
 }
 
 .booking__button {
+  width: 303px;
   margin-top: 26px;
   font-size: 14px;
   line-height: 21px;
@@ -241,7 +252,33 @@
     padding-left: 29px;
   }
 
+  .booking__fieldset {
+    margin-top: 36px;
+  }
+
+  .booking__input-name {
+    width: 222px;
+    margin-top: 27px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .booking__input-phone {
+    width: 222px;
+    margin-top: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .booking__input-mail {
+    width: 222px;
+    margin-top: 20px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
   .booking__button {
+    width: 230px;
     margin-top: 24px;
   }
 }

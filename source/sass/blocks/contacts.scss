@@ -8,6 +8,29 @@
   justify-content: center;
 }
 
+.contacts__map {
+  position: relative;
+}
+
+.contacts__map iframe {
+  z-index: 10;
+}
+
+.contacts__map-change {
+  position: absolute;
+  width: 560px;
+  height: 306px;
+  margin-left: -560px;
+  overflow: hidden;
+}
+
+.contacts__wrapper img {
+  position: absolute;
+  width: 560px;
+  height: 306px;
+  z-index: -1;
+}
+
 .contacts__address-wrapper {
   width: 500px;
   margin-left: 7.174%;
@@ -77,12 +100,23 @@
     padding-top: 100px;
     padding-bottom: 89px;
   }
-  
+
   .contacts__map iframe {
     width: 324px;
     height: 335px;
   }
-  
+
+  .contacts__map-change {
+    width: 324px;
+    height: 335px;
+    margin-left: -324px;
+  }
+
+  .contacts__wrapper img {
+    width: 324px;
+    height: 335px;
+  }
+
   .contacts__address-wrapper {
     width: 324px;
     margin-left: 30px;
@@ -115,6 +149,17 @@
   }
 
   .contacts__map iframe {
+    width: 290px;
+    height: 316px;
+  }
+
+  .contacts__map-change {
+    width: 290px;
+    height: 316px;
+    margin-left: -290px;
+  }
+
+  .contacts__wrapper img {
     width: 290px;
     height: 316px;
   }

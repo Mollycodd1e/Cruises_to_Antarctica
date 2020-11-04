@@ -19,7 +19,10 @@
         <p class="main-nav__title-description">Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
       </div>
       <a class="main-nav__logo">
-        <img class="main-nav__logo-image" src="img/logo-desktop.png" width="70" height="38" alt="Логотип круизной компании">
+        <picture class="main-nav__logo-change">
+          <source class ="main-nav__logo-mobile" media="(max-width: 767px)" srcset="img/logo-black.png">
+          <img class="main-nav__logo-image" src="img/logo-desktop.png" width="70" height="38" alt="Логотип круизной компании">
+        </picture>
       </a>
       <button type="button" class="main-nav__toggle">
         <span class="visually-hidden">Открыть меню</span>
@@ -41,9 +44,12 @@
         <p class="travel__description">Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
       </div>
       <picture>
+        <!-- 1х: 290px; 2x: 580px -->
         <source type="image/webp" media="(max-width: 767px)" srcset="img/pinguins_mobile.webp 1x, img/pinguins_mobile@2x.webp 2x">
+        <!-- 1х: 324px; 2x: 648px -->
         <source type="image/webp" media="(max-width: 1023px)" srcset="img/pinguins_tablet.webp 1x, img/pinguins_tablet@2x.webp 2x">
         <source type="image/webp" srcset="img/pinguins_desktop.webp 1x, img/pinguins_desktop@2x.webp 2x">
+        <!-- 1х: 560px; 2x: 1120px -->
         <img class="travel__image" src="img/pinguins_desktop.jpg" srcset="img/pinguins_desktop@2x.jpg" width="560" height="301" alt="Фото пингвинов">
       </picture>
     </section>
@@ -70,9 +76,12 @@
         <li class="cruises__item">
           <h3 class="cruises__name">Круиз “Астория”</h3>
           <picture>
+            <!-- 1х: 270px; 2x: 540px -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/astoria_mobile.webp 1x, img/astoria_mobile@2x.webp 2x">
+            <!-- 1х: 309px; 2x: 618px -->
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/astoria_tablet.webp 1x, img/astoria_tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/astoria_desktop.webp 1x, img/astoria_desktop@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 560px -->
             <img class="cruises__image" src="img/astoria_desktop.jpg" srcset="img/astoria_desktop@2x.jpg" width="260" height="386" alt="Фото круиза Астория">
           </picture>
           <div class="cruises__wrapper description">
@@ -91,9 +100,12 @@
         <li class="cruises__item">
           <h3 class="cruises__name">Круиз “Элайн”</h3>
           <picture>
+            <!-- 1х: 270px; 2x: 540px -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/atlantis_mobile.webp 1x, img/atlantis_mobile@2x.webp 2x">
+            <!-- 1х: 309px; 2x: 618px -->
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/atlantis_tablet.webp 1x, img/atlantis_tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/atlantis_desktop.webp 1x, img/atlantis_desktop@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 560px -->
             <img class="cruises__image" src="img/atlantis_desktop.jpg" srcset="img/atlantis_desktop@2x.jpg" width="260" height="386" alt="Фото круиза Элайн">
           </picture>
           <div class="cruises__wrapper description">
@@ -112,9 +124,12 @@
         <li class="cruises__item">
           <h3 class="cruises__name">Круиз “Атлантис”</h3>
           <picture>
+            <!-- 1х: 270px; 2x: 540px -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/atlantis_mobile.webp 1x, img/atlantis_mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/atlantis_tablet.webp 1x, img/atlantis_tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/atlantis_desktop.webp 1x, img/atlantis_desktop@2x.webp 2x">
+            <!-- 1х: 309px; 2x: 618px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/atlantis_tablet.webp 1x, img/atlantis_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/atlantis_desktop.webp 1x, img/atlantis_desktop@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 560px -->
             <img class="cruises__image" src="img/atlantis_desktop.jpg" srcset="img/atlantis_desktop@2x.jpg" width="260" height="386" alt="Фото круиза Атлантис">
           </picture>
           <div class="cruises__wrapper description">
@@ -133,9 +148,12 @@
         <li class="cruises__item">
           <h3 class="cruises__name">Круиз “Одиссей”</h3>
           <picture>
+            <!-- 1х: 270px; 2x: 540px -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/odyssey_mobile.webp 1x, img/odyssey_mobile@2x.webp 2x">
+            <!-- 1х: 309px; 2x: 618px -->
             <source type="image/webp" media="(max-width: 1023px)" srcset="img/odyssey_tablet.webp 1x, img/odyssey_tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/odyssey_desktop.webp 1x, img/odyssey_desktop@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 560px -->
             <img class="cruises__image" src="img/odyssey_desktop.jpg" srcset="img/odyssey_desktop@2x.jpg" width="260" height="386" alt="Фото круиза Одиссей">
           </picture>
           <div class="cruises__wrapper description">
@@ -154,9 +172,12 @@
         <li class="cruises__item">
           <h3 class="cruises__name">Круиз “Олимпия”</h3>
           <picture>
+            <!-- 1х: 270px; 2x: 540px -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/olympia_mobile.webp 1x, img/olympia_mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/olympia_tablet.webp 1x, img/olympia_tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/olympia_desktop.webp 1x, img/olympia_desktop@2x.webp 2x">
+            <!-- 1х: 309px; 2x: 618px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/olympia_tablet.webp 1x, img/olympia_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/olympia_desktop.webp 1x, img/olympia_desktop@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 560px -->
             <img class="cruises__image" src="img/olympia_desktop.jpg" srcset="img/olympia_desktop@2x.jpg" width="260" height="386" alt="Фото круиза Олимпия">
           </picture>
           <div class="cruises__wrapper description">
@@ -175,9 +196,12 @@
         <li class="cruises__item">
           <h3 class="cruises__name">Круиз “Аврора”</h3>
           <picture>
+            <!-- 1х: 270px; 2x: 540px -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/aurora_mobile.webp 1x, img/aurora_mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/aurora_tablet.webp 1x, img/aurora_tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/aurora_desktop.webp 1x, img/aurora_desktop@2x.webp 2x">
+            <!-- 1х: 309px; 2x: 618px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/aurora_tablet.webp 1x, img/aurora_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/aurora_desktop.webp 1x, img/aurora_desktop@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 560px -->
             <img class="cruises__image" src="img/aurora_desktop.jpg" srcset="img/aurora_desktop@2x.jpg" width="260" height="386" alt="Фото круиза Аврора">
           </picture>
           <div class="cruises__wrapper description">
@@ -196,9 +220,12 @@
         <li class="cruises__item">
           <h3 class="cruises__name">Круиз “Леонор”</h3>
           <picture>
+            <!-- 1х: 270px; 2x: 540px -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/leonor_mobile.webp 1x, img/leonor_mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/leonor_tablet.webp 1x, img/leonor_tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/leonor_desktop.webp 1x, img/leonor_desktop@2x.webp 2x">
+            <!-- 1х: 309px; 2x: 618px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/leonor_tablet.webp 1x, img/leonor_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/leonor_desktop.webp 1x, img/leonor_desktop@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 560px -->
             <img class="cruises__image" src="img/leonor_desktop.jpg" srcset="img/leonor_desktop@2x.jpg" width="260" height="386" alt="Фото круиза Леонор">
           </picture>
           <div class="cruises__wrapper description">
@@ -217,9 +244,12 @@
         <li class="cruises__item">
           <h3 class="cruises__name">Круиз “Минион - 1”</h3>
           <picture>
+            <!-- 1х: 270px; 2x: 540px -->
             <source type="image/webp" media="(max-width: 767px)" srcset="img/minion1_mobile.webp 1x, img/minion1_mobile@2x.webp 2x">
-              <source type="image/webp" media="(max-width: 1023px)" srcset="img/minion1_tablet.webp 1x, img/minion1_tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/minion1_desktop.webp 1x, img/minion1_desktop@2x.webp 2x">
+            <!-- 1х: 309px; 2x: 618px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/minion1_tablet.webp 1x, img/minion1_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/minion1_desktop.webp 1x, img/minion1_desktop@2x.webp 2x">
+            <!-- 1х: 260px; 2x: 560px -->
             <img class="cruises__image" src="img/minion1_desktop.jpg" srcset="img/minion1_desktop@2x.jpg" width="260" height="386" alt="Фото круиза Минион-1">
           </picture>
           <div class="cruises__wrapper description">
@@ -244,15 +274,17 @@
           <p class="booking__description">Забронируйте тур за&nbsp;3&#8209;6&nbsp;месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до 50%</p>
         </div>
         <form class="booking__form" action="https://echo.htmlacademy.ru" method="post">
-          <legend class="booking__form-title">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</legend>
-          <input class="booking__input-name" type="text" name="name" id="name" placeholder="Name" pattern="[A-Za-zА-Яа-яЁё]{2,64}" title="Минимум 2 буквы любого алфавита" required>
-          <input class="booking__input-phone" type="tel" id="phone" name="phone" pattern="[8]{1}[0-9]{10}" title="Пример: 8********** (10 цифр)" placeholder="Phone" minlength="11" required>
-          <input class="booking__input-mail" type="email" name="E-mail" id="email" placeholder="E-mail" required>
-          <div class="booking__checkbox-wrapper">
-            <input class="visually-hidden booking__input-checkbox" type="checkbox" name="data-processing" id="data-processing" checked required>
-            <label for="data-processing">Я согласен на обработку моих&nbsp;персональных данных</label>
-          </div>
-          <button class="booking__button">Оставить заявку</button>
+          <fieldset class="booking__fieldset">
+            <legend class="booking__form-title">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</legend>
+            <input class="booking__input-name" type="text" name="name" id="name" placeholder="Name" pattern="[A-Za-zА-Яа-яЁё]{2,64}" title="Минимум 2 буквы любого алфавита" required>
+            <input class="booking__input-phone" type="tel" id="phone" name="phone" pattern="[8]{1}[0-9]{10}" title="Пример: 8********** (10 цифр)" placeholder="Phone" minlength="11" required>
+            <input class="booking__input-mail" type="email" name="E-mail" id="email" placeholder="E-mail" required>
+            <div class="booking__checkbox-wrapper">
+              <input class="visually-hidden booking__input-checkbox" type="checkbox" name="data-processing" id="data-processing" checked required>
+              <label for="data-processing">Я согласен на обработку моих&nbsp;персональных данных</label>
+            </div>
+            <button class="booking__button">Оставить заявку</button>
+          </fieldset>
         </form>
       </div>
     </section>
@@ -260,10 +292,19 @@
       <div class="contacts__wrapper">
         <div class="contacts__map" style="position:relative;overflow:hidden;">
           <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.321114%2C59.938435&utm_medium=mapframe&utm_source=maps&z=16.23" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
-          <iframe src="https://yandex.ru/map-widget/v1/-/CCUAMIEvSC" width="560" height="306" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCUAMIEvSC" width="560" height="306" style="position:relative;"></iframe>
+          <picture class="contacts__map-change">
+            <!-- 1х: 290px; 2x: 580px -->
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/map_mobile.webp 1x, img/map_mobile@2x.webp 2x">
+            <!-- 1х: 324px; 2x: 648px -->
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/map_tablet.webp 1x, img/map_tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map_desktop.webp 1x, img/map_desktop@2x.webp 2x">
+            <!-- 1х: 560px; 2x: 1120px -->
+            <img src="img/map_desktop.jpg" srcset="img/map_desktop@2x.jpg" width="560" height="306" alt="Карта месторасположения контакта">
+          </picture>
         </div>
         <div class="contacts__address-wrapper">
-          <p class="contacts__address-title">У вас ещё остались вопросы или сомнения?Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
+          <p class="contacts__address-title">У вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
           <p class="contacts__address">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
           <p class="contacts__phone">8-800-200-00-00</p>
         </div>
