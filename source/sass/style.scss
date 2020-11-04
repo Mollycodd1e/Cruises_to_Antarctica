@@ -1,3 +1,4 @@
+@import "node_modules/normalize-scss/sass/normalize.scss";
 @import "variables.scss";
 @import "scaffolding.scss";
 @import "blocks/main-header.scss";
@@ -10,3 +11,4 @@
 @import "blocks/cruises.scss";
 @import "blocks/description.scss";
 @import "blocks/booking.scss";
+@import "blocks/contacts.scss";

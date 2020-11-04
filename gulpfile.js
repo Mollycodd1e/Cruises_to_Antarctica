@@ -20,9 +20,7 @@ gulp.task("css", function () {
   return gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sourcemap.init())
-    .pipe(sass({
-      includePaths: require('node-normalize-scss').includePaths
-    }))
+    .pipe(sass({}))
     .pipe(postcss([ autoprefixer() ]))
     .pipe(csso())
     .pipe(rename("style.min.css"))
@@ -88,8 +86,7 @@ gulp.task("copy", function () {
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
     "source/js/**",
-    "source//*.ico",
-    "source//sass/normalize.css"
+    "source//*.ico"
     ], {
       base: "source"
     })

@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Круиз в Антарктику</title>
-  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
   <link rel="preload" href="fonts/montserrat-regular.woff2" as="font">
 </head>
@@ -251,10 +250,23 @@
           <input class="booking__input-mail" type="email" name="E-mail" id="email" placeholder="E-mail" required>
           <div class="booking__checkbox-wrapper">
             <input class="visually-hidden booking__input-checkbox" type="checkbox" name="data-processing" id="data-processing" checked required>
-            <label for="data-processing">Я согласен на обработку моих персональных данных</label>
+            <label for="data-processing">Я согласен на обработку моих&nbsp;персональных данных</label>
           </div>
           <button class="booking__button">Оставить заявку</button>
         </form>
+      </div>
+    </section>
+    <section class="contacts">
+      <div class="contacts__wrapper">
+        <div class="contacts__map" style="position:relative;overflow:hidden;">
+          <a href="https://yandex.ru/maps/2/saint-petersburg/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Санкт‑Петербург</a><a href="https://yandex.ru/maps/2/saint-petersburg/house/bolshaya_konyushennaya_ulitsa_19_8/Z0kYdQVjSEQPQFtjfXVyeXpgYQ==/?ll=30.321114%2C59.938435&utm_medium=mapframe&utm_source=maps&z=16.23" style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Конюшенная улица, 19/8 — Яндекс.Карты</a>
+          <iframe src="https://yandex.ru/map-widget/v1/-/CCUAMIEvSC" width="560" height="306" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>
+        <div class="contacts__address-wrapper">
+          <p class="contacts__address-title">У вас ещё остались вопросы или сомнения?Приезжайте к&nbsp;нам в&nbsp;офис и мы вам все расскажем.</p>
+          <p class="contacts__address">г. Санкт Петербург, ул.&nbsp;Большая&nbsp;Конюшенная, 19/8</p>
+          <p class="contacts__phone">8-800-200-00-00</p>
+        </div>
       </div>
     </section>
   </main>
