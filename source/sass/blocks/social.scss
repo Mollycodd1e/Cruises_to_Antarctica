@@ -3,12 +3,12 @@
   list-style: none;
 }
 
-.social__item {
+.social li {
   margin-left: 33px;
   cursor: pointer;
 }
 
-.social__item:nth-child(1) {
+.social li:nth-child(1) {
   margin-left: 0;
 }
 
@@ -30,14 +30,14 @@
     height: 13px;
   }
 
-  .social__item {
+  .social li {
     margin-left: 23px;
     cursor: pointer;
   }
 }
 
 @media (max-width: $mobile-width-only) {
-  .social__item {
+  .social li {
     margin-left: 23px;
   }
 

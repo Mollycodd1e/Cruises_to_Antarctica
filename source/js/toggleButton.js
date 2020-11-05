@@ -1,40 +1,48 @@
 'use strict';
 
-var mainNav = document.querySelector('.main-nav');
-var mainNavToggle = document.querySelector('.main-nav__toggle');
-var logo = document.querySelector('.main-nav__logo-image');
-var mobileLogo = document.querySelector('.main-nav__logo-mobile');
+(function () {
+  var mainNav = document.querySelector('.main-nav');
 
-mainNav.classList.remove('main-nav--nojs');
+  if (document.querySelector('.main-nav')) {
+    var mainNavToggle = document.querySelector('.main-nav__toggle');
+    var logo = document.querySelector('.main-nav__logo img');
+    var whiteLogoDesktop = 'img/logo-desktop.png';
+    var whiteLogoDesktopRetina = 'img/logo-desktop@2x.png';
+    var blackLogo = 'img/logo-black.png';
+    var blackLogoRetina = 'img/logo-black@2x.png';
 
-var whiteLogo = function () {
-  logo.src = 'img/logo-desktop.png';
-  mobileLogo.srcset = 'img/logo-desktop.png';
-};
+    mainNav.classList.remove('main-nav--nojs');
 
-var blackLogo = function () {
-  logo.src = 'img/logo-black.png';
-  mobileLogo.srcset = 'img/logo-black.png';
-};
+    var changeOnWhiteLogo = function () {
+      logo.src = whiteLogoDesktop;
+      logo.srcset = whiteLogoDesktopRetina;
+    };
 
-whiteLogo();
+    var changeOnBlackLogo = function () {
+      logo.src = blackLogo;
+      logo.srcset = blackLogoRetina;
+    };
 
-mainNavToggle.addEventListener('click', function () {
-  if (mainNav.classList.contains('main-nav--closed')) {
-    mainNav.classList.remove('main-nav--closed');
-    mainNav.classList.add('main-nav--opened');
-    blackLogo();
-  } else {
-    mainNav.classList.add('main-nav--closed');
-    mainNav.classList.remove('main-nav--opened');
-    whiteLogo();
+    changeOnWhiteLogo();
+
+    mainNavToggle.addEventListener('click', function () {
+      if (mainNav.classList.contains('main-nav--closed')) {
+        mainNav.classList.remove('main-nav--closed');
+        mainNav.classList.add('main-nav--opened');
+        changeOnBlackLogo();
+      } else {
+        mainNav.classList.add('main-nav--closed');
+        mainNav.classList.remove('main-nav--opened');
+        changeOnWhiteLogo();
+      }
+    });
+
+    window.addEventListener('resize', function () {
+      if (window.innerWidth > 767 && mainNav.classList.contains('main-nav--opened') === true) {
+        mainNav.classList.add('main-nav--closed');
+        mainNav.classList.remove('main-nav--opened');
+        changeOnWhiteLogo();
+      }
+    });
   }
-});
-
-window.addEventListener('resize', function () {
-  if (window.innerWidth > 767 && mainNav.classList.contains('main-nav--opened') === true) {
-    mainNav.classList.add('main-nav--closed');
-    mainNav.classList.remove('main-nav--opened');
-    whiteLogo();
-  }
-});
+})();

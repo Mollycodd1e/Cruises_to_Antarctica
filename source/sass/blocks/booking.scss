@@ -24,7 +24,7 @@
   margin-top: -6px;
 }
 
-.booking__title {
+.booking__wrapper h3 {
   margin: 0;
   font-size: 40px;
   line-height: 60px;
@@ -33,7 +33,7 @@
   color: #011c40;
 }
 
-.booking__description {
+.booking__wrapper p {
   margin: 0;
   width: 352px;
   font-size: 18px;
@@ -57,7 +57,7 @@
   background-color: #011c40;
 }
 
-.booking__fieldset {
+.booking__form fieldset {
   margin: 0;
   padding: 0;
   margin-top: 45px;
@@ -72,7 +72,7 @@
   color: #011c40;
 }
 
-.booking__form-title {
+.booking__form legend {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -82,21 +82,21 @@
   color: #f9fbfd;
 }
 
-.booking__input-name {
+.booking__name-wrapper input {
   width: 295px;
   margin-top: 27px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-.booking__input-phone {
+.booking__phone-wrapper input {
   width: 295px;
   margin-top: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
 }
 
-.booking__input-mail {
+.booking__mail-wrapper input {
   width: 295px;
   margin-top: 20px;
   padding-top: 12px;
@@ -117,7 +117,7 @@
   cursor: pointer;
 }
 
-.booking__form .booking__input-checkbox:not(:checked) + label::before {
+.booking__checkbox-wrapper input:not(:checked) + label::before {
   content: "";
 
   position: absolute;
@@ -130,7 +130,7 @@
   cursor: pointer;
 }
 
-.booking__form .booking__input-checkbox:checked + label::after {
+.booking__checkbox-wrapper input:checked + label::after {
   content: "";
 
   position: absolute;
@@ -147,7 +147,7 @@
   cursor: pointer;
 }
 
-.booking__button {
+.booking__form button {
   width: 303px;
   margin-top: 26px;
   font-size: 14px;
@@ -179,12 +179,12 @@
     margin-top: -6px;
   }
 
-  .booking__title {
+  .booking__wrapper h3 {
     font-size: 34px;
     line-height: 51px;
   }
 
-  .booking__description {
+  .booking__wrapper p {
     text-align: center;
     margin: 0 auto;
     margin-top: 5px;
@@ -216,14 +216,14 @@
     margin-top: -6px;
   }
 
-  .booking__title {
+  .booking__wrapper h3 {
     font-size: 24px;
     line-height: 31px;
     width: 290px;
     text-align: center;
   }
 
-  .booking__description {
+  .booking__wrapper p {
     text-align: center;
     margin: 0 auto;
     margin-top: 15px;
@@ -240,7 +240,7 @@
     padding-bottom: 40px;
   }
 
-  .booking__form-title {
+  .booking__form legend {
     line-height: 25px;
     text-align: center;
     margin-top: 36px;
@@ -248,36 +248,37 @@
 
   .booking__checkbox-wrapper label {
     display: inline-block;
+    vertical-align: center;
     line-height: 12px;
     padding-left: 29px;
   }
 
-  .booking__fieldset {
+  .booking__form fieldset {
     margin-top: 36px;
   }
 
-  .booking__input-name {
+  .booking__name-wrapper input {
     width: 222px;
     margin-top: 27px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
 
-  .booking__input-phone {
+  .booking__phone-wrapper input {
     width: 222px;
     margin-top: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
 
-  .booking__input-mail {
+  .booking__mail-wrapper input {
     width: 222px;
     margin-top: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
 
-  .booking__button {
+  .booking__form button {
     width: 230px;
     margin-top: 24px;
   }

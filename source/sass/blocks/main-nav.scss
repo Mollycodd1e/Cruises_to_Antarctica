@@ -19,7 +19,7 @@
   order: 3;
 }
 
-.main-nav__title {
+.main-nav__title-wrapper h1 {
   font-size: 54px;
   line-height: 65.83px;
   font-weight: 700;
@@ -27,7 +27,7 @@
   letter-spacing: 0.01px;
 }
 
-.main-nav__title-description {
+.main-nav__title-wrapper p {
   font-size: 20px;
   line-height: 24.38px;
   font-weight: 400;
@@ -59,7 +59,7 @@
   list-style: none;
 }
 
-.main-nav__item {
+.main-nav__list li {
   margin-left: 33px;
 }
 
@@ -83,7 +83,7 @@
     line-height: 17.07px;
   }
 
-  .main-nav__item {
+  .main-nav__list li {
     margin-left: 23px;
   }
 
@@ -92,12 +92,12 @@
     padding-left: 0;
   }
 
-  .main-nav__title {
+  .main-nav__title-wrapper h1 {
     font-size: 50px;
     line-height: 60.95px;
   }
 
-  .main-nav__title-description {
+  .main-nav__title-wrapper p {
     font-size: 18px;
     line-height: 21.94px;
     font-weight: 400;
@@ -116,7 +116,7 @@
     height: 22px;
   }
 
-  .main-nav--opened .main-nav__logo-image {
+  .main-nav--opened img {
     position: relative;
     z-index: 12;
   }
@@ -210,38 +210,26 @@
     flex-direction: column;
   }
 
-  .main-nav--opened .main-nav__item {
+  .main-nav--opened .main-nav__list li {
     margin-right: auto;
     margin-left: 0;
     margin-top: 23px;
   }
 
-  .main-nav--opened .main-nav__item:nth-child(2) {
-    order: 1;
-  }
-
-  .main-nav--opened .main-nav__item:nth-child(1) {
-    order: 2;
-  }
-
-  .main-nav--opened .main-nav__item:nth-child(3) {
-    order: 3;
-  }
-
-  .main-nav--opened .main-nav__item:nth-child(4) {
-    order: 4;
+  .main-nav--opened .main-nav__list li:nth-child(3n + 2) {
+    order: -1;
   }
 
   .main-nav__title-wrapper {
     padding-top: 134px;
   }
 
-  .main-nav__title {
+  .main-nav__title-wrapper h1 {
     font-size: 36px;
     line-height: 45px;
   }
 
-  .main-nav__title-description {
+  .main-nav__title-wrapper p {
     font-size: 16px;
     line-height: 22.4px;
     font-weight: 400;
@@ -270,7 +258,7 @@
     color: #011c40;
   }
 
-  .main-nav--nojs .main-nav__item {
+  .main-nav--nojs .main-nav__list li {
     margin-right: auto;
     margin-left: 0;
     margin-top: 23px;
@@ -280,19 +268,7 @@
     z-index: 12;
   }
 
-  .main-nav--nojs .main-nav__item:nth-child(2) {
-    order: 1;
-  }
-
-  .main-nav--nojs .main-nav__item:nth-child(1) {
-    order: 2;
-  }
-
-  .main-nav--nojs .main-nav__item:nth-child(3) {
-    order: 3;
-  }
-
-  .main-nav--nojs .main-nav__item:nth-child(4) {
-    order: 4;
+  .main-nav--nojs .main-nav__list li:nth-child(3n + 2) {
+    order: -1;
   }
 }
