@@ -12,30 +12,6 @@
   cursor: pointer;
 }
 
-.main-nav__title-wrapper {
-  padding-top: 199px;
-  padding-left: 95px;
-  width: 100%;
-  order: 3;
-}
-
-.main-nav__title-wrapper h1 {
-  font-size: 54px;
-  line-height: 65.83px;
-  font-weight: 700;
-  margin: 0;
-  letter-spacing: 0.01px;
-}
-
-.main-nav__title-wrapper p {
-  font-size: 20px;
-  line-height: 24.38px;
-  font-weight: 400;
-  margin: 0;
-  margin-top: 11px;
-  order: 3;
-}
-
 .main-nav__toggle {
   display: none;
 }
@@ -86,27 +62,11 @@
   .main-nav__list li {
     margin-left: 23px;
   }
-
-  .main-nav__title-wrapper {
-    padding-top: 219px;
-    padding-left: 0;
-  }
-
-  .main-nav__title-wrapper h1 {
-    font-size: 50px;
-    line-height: 60.95px;
-  }
-
-  .main-nav__title-wrapper p {
-    font-size: 18px;
-    line-height: 21.94px;
-    font-weight: 400;
-    margin-top: 12px;
-  }
 }
 
 @media (max-width: $mobile-width-only) {
   .main-nav__logo {
+    position: relative;
     width: 42px;
     height: 22px;
   }
@@ -137,6 +97,38 @@
     padding-left: 15px;
     padding-bottom: 58px;
     z-index: 10;
+  }
+
+  .main-nav--opened .main-nav__logo img {
+    display: none;
+  }
+
+  .main-nav--opened .main-nav__logo {
+    display: block;
+    position: relative;
+
+    z-index: 20;
+  }
+
+  .main-nav--opened .main-nav__logo::after {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 42px;
+    height: 22px;
+
+    background-image: url("../../img/logo-black.png");
+    background-repeat: no-repeat;
+    background-size: 42px 22px;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      .main-nav--opened .main-nav__logo::after {
+        background-image: url("../../img/logo-black@2x.png");
+        background-size: 42px 22px;
+      }
+    }
   }
 
   .main-nav__toggle {
@@ -218,21 +210,6 @@
 
   .main-nav--opened .main-nav__list li:nth-child(3n + 2) {
     order: -1;
-  }
-
-  .main-nav__title-wrapper {
-    padding-top: 134px;
-  }
-
-  .main-nav__title-wrapper h1 {
-    font-size: 36px;
-    line-height: 45px;
-  }
-
-  .main-nav__title-wrapper p {
-    font-size: 16px;
-    line-height: 22.4px;
-    font-weight: 400;
   }
 
   .main-nav--nojs .main-nav__toggle {

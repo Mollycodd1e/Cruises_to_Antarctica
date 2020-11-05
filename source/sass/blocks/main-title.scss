@@ -1,0 +1,118 @@
+.main-title {
+  min-height: 650px;
+  box-sizing: border-box;
+  background-image: url("../../img/header_desktop.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #4086ff;
+  color: #f9fbfd;
+}
+
+.main-title__wrapper {
+  box-sizing: border-box;
+  padding-top: 271px;
+  padding-left: 198px;
+  width: 100%;
+}
+
+.main-title__wrapper h1 {
+  font-size: 54px;
+  line-height: 65.83px;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.01px;
+}
+
+.main-title__wrapper p {
+  font-size: 20px;
+  line-height: 24.38px;
+  font-weight: 400;
+  margin: 0;
+  margin-top: 11px;
+}
+
+@media (min-width: $desktop-width) {
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-title {
+      background-image: url("../../img/header_desktop@2x.jpg");
+      background-position: center bottom;
+      background-size: cover;
+    }
+  }
+}
+
+@media (max-width: $tablet-width-only) {
+  .main-title {
+    min-height: 638px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 30px;
+    background-image: url("../../img/header_tablet.jpg");
+    background-position: center center;
+    background-size: cover;
+  }
+
+  .main-title__wrapper {
+    box-sizing: border-box;
+    padding-top: 239px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .main-title__wrapper h1 {
+    font-size: 50px;
+    line-height: 60.95px;
+  }
+
+  .main-title__wrapper p {
+    font-size: 18px;
+    line-height: 21.94px;
+    font-weight: 400;
+    margin-top: 12px;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-title {
+      background-image: url("../../img/header_tablet@2x.jpg");
+      background-position: center center;
+      background-size: cover;
+    }
+  }
+}
+
+@media (max-width: $mobile-width-only) {
+  .main-title {
+    min-height: 500px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 20px;
+    background-image: url("../../img/header_mobile.jpg");
+    background-position: center bottom;
+    background-size: 100% auto;
+  }
+
+  .main-title__wrapper {
+    padding-top: 157px;
+    padding-left: 0;
+  }
+
+  .main-title__wrapper h1 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+
+  .main-title__wrapper p {
+    font-size: 16px;
+    line-height: 22.4px;
+    font-weight: 400;
+  }
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    .main-title {
+      background-image: url("../../img/header_mobile@2x.jpg");
+      background-position: center bottom;
+      background-size: 100% auto;
+    }
+  }
+}
