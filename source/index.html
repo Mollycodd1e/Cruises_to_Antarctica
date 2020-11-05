@@ -44,6 +44,7 @@
     </section>
     <section class="travel">
       <div class="travel__wrapper">
+      <div class="travel__title-wrapper">
         <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
         <p>Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы сможете увидеть: ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.</p>
       </div>
@@ -57,6 +58,7 @@
         <!-- 1х: 560px; 2x: 1120px -->
         <img class="travel__image" src="img/pinguins_desktop.jpg" srcset="img/pinguins_desktop@2x.jpg" width="560" height="301" alt="Фото пингвинов">
       </picture>
+      </div>
     </section>
     <section class="advantages">
       <h2>Преимущества</h2>
@@ -336,45 +338,47 @@
     </section>
   </main>
   <footer class="main-footer">
-    <a class="main-footer__logo">
-      <!-- x1: 70px; x2: 140px-->
-      <img src="img/logo-desktop.png" srcset="img/logo-desktop@2x.png" width="70" height="38" alt="Логотип круизной компании">
-    </a>
     <div class="main-footer__wrapper">
-      <ul class="main-footer__list">
-        <li>Преимущества</li>
-        <li>Направления</li>
-        <li>Ближайшие круизы</li>
-        <li>Контакты</li>
-      </ul>
-    </div>
-    <div class="main-footer__social-wrapper">
-      <ul class="main-footer__social social">
-        <li class="social__item">
-          <a class="social__link social__link--facebook" href="#">
-            <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20">
-              <use xlink:href="#icon-facebook"></use>
-            </svg>
-            <span class="visually-hidden">Facebook</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--instagram" href="#">
-            <svg x="0" y="0" width="20" height="20" viewBox="0 0 20 20" xml:space="preserve">
-              <use xlink:href="#icon-instagram"></use>
-            </svg>
-            <span class="visually-hidden">Instagram</span>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--twitter" href="#">
-            <svg x="0" y="0" width="20" height="16" viewBox="0 0 20 16" xml:space="preserve">
-              <use xlink:href="#icon-twitter"></use>
-            </svg>
-            <span class="visually-hidden">Twitter</span>
-          </a>
-        </li>
-      </ul>
+      <a class="main-footer__logo">
+        <!-- x1: 70px; x2: 140px-->
+        <img src="img/logo-desktop.png" srcset="img/logo-desktop@2x.png" width="70" height="38" alt="Логотип круизной компании">
+      </a>
+      <div class="main-footer__list-wrapper">
+        <ul class="main-footer__list">
+          <li>Преимущества</li>
+          <li>Направления</li>
+          <li>Ближайшие круизы</li>
+          <li>Контакты</li>
+        </ul>
+      </div>
+      <div class="main-footer__social-wrapper">
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--facebook" href="#">
+              <svg xmlns="http://www.w3.org/2000/svg" width="11" height="20" viewBox="0 0 11 20">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--instagram" href="#">
+              <svg x="0" y="0" width="20" height="20" viewBox="0 0 20 20" xml:space="preserve">
+                <use xlink:href="#icon-instagram"></use>
+              </svg>
+              <span class="visually-hidden">Instagram</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--twitter" href="#">
+              <svg x="0" y="0" width="20" height="16" viewBox="0 0 20 16" xml:space="preserve">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </footer>
   <script src="js/main.js"></script>

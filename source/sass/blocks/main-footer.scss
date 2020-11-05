@@ -5,14 +5,19 @@
   padding-bottom: 44px;
   padding-top: 50px;
   box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
   font-size: 16px;
   line-height: 19.5px;
   font-weight: 500;
 
   background-color: #011c40;
   color: #f9fbfd;
+}
+
+.main-footer__wrapper {
+  max-width: 1160px;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0 auto;
 }
 
 .main-footer__logo {
@@ -30,7 +35,7 @@
   margin-left: 33px;
 }
 
-.main-footer__wrapper {
+.main-footer__list-wrapper {
   margin-left: 40px;
   margin-top: -6px;
   align-self: center;
@@ -69,7 +74,7 @@
     height: 20px;
   }
 
-  .main-footer__wrapper {
+  .main-footer__list-wrapper {
     margin-left: 25px;
     margin-top: -6px;
   }
@@ -105,7 +110,7 @@
     flex-direction: column;
   }
 
-  .main-footer__wrapper {
+  .main-footer__-listwrapper {
     margin-top: 29px;
     margin-left: 0;
   }

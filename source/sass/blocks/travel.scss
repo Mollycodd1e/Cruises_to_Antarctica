@@ -11,18 +11,24 @@
 }
 
 .travel__wrapper {
+  max-width: 1160px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.travel__title-wrapper {
   box-sizing: border-box;
   padding-right: 64px;
 }
 
-.travel__wrapper h2 {
+.travel__title-wrapper h2 {
   margin: 0;
   font-size: 28px;
   line-height: 42px;
   font-weight: 600;
 }
 
-.travel__wrapper p {
+.travel__title-wrapper p {
   margin: 0;
   margin-top: 24px;
   font-size: 16px;
@@ -42,7 +48,7 @@
     padding-bottom: 94px;
   }
 
-  .travel__wrapper {
+  .travel__title-wrapper {
     box-sizing: border-box;
     padding-right: 30px;
   }
@@ -52,13 +58,13 @@
     height: 264px;
   }
 
-  .travel__wrapper h2 {
+  .travel__title-wrapper h2 {
     margin-top: -3px;
     font-size: 26px;
     line-height: 36.4px;
   }
 
-  .travel__wrapper p {
+  .travel__title-wrapper p {
     margin-top: 16px;
   }
 }
@@ -72,7 +78,7 @@
     padding-bottom: 65px;
   }
 
-  .travel__wrapper {
+  .travel__title-wrapper {
     padding-right: 5px;
   }
 
@@ -83,7 +89,7 @@
     height: 186px;
   }
 
-  .travel__wrapper h2 {
+  .travel__title-wrapper h2 {
     font-size: 24px;
     line-height: 33.6px;
   }
