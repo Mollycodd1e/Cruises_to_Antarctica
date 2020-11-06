@@ -67,7 +67,7 @@
 }
 
 .booking__form-wrapper input::placeholder {
-  padding-left: 10px;
+  //padding-left: 10px;
   font-size: 14px;
   line-height: 21px;
 
@@ -80,32 +80,40 @@
   font-weight: 500;
   margin-top: 44px;
   padding: 0;
+  max-width: 310px;
 
   color: #f9fbfd;
 }
 
 .booking__name-wrapper input {
-  width: 295px;
+  width: 303px;
   margin-top: 27px;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
 .booking__phone-wrapper input {
-  width: 295px;
+  width: 303px;
   margin-top: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
 .booking__mail-wrapper input {
-  width: 295px;
+  width: 303px;
   margin-top: 20px;
   padding-top: 12px;
   padding-bottom: 12px;
+  padding-left: 10px;
+  box-sizing: border-box;
 }
 
 .booking__checkbox-wrapper {
+  max-width: 305px;
   margin-top: 18px;
   position: relative;
 }
