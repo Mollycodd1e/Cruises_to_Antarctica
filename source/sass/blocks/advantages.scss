@@ -45,7 +45,7 @@
   background-color: #f9fbfd;
 }
 
-.advantages__list li:nth-child(1) {
+.advantages__list li:nth-child(3n + 1) {
   margin-left: 0;
 }
 
@@ -56,7 +56,7 @@
   font-weight: 500;
 }
 
-.advantages__list li:nth-child(1) h3::before {
+.advantages__list li:nth-child(3n + 1) h3::before {
   content: "";
 
   position: absolute;
@@ -70,7 +70,7 @@
   background-repeat: no-repeat;
 }
 
-.advantages__list li:nth-child(2) h3::before {
+.advantages__list li:nth-child(3n + 2) h3::before {
   content: "";
 
   position: absolute;
@@ -84,7 +84,7 @@
   background-repeat: no-repeat;
 }
 
-.advantages__list li:nth-child(3) h3::before {
+.advantages__list li:nth-child(3n + 3) h3::before {
   content: "";
 
   position: absolute;
@@ -106,11 +106,11 @@
   padding-right: 42px;
 }
 
-.advantages__list li:nth-child(2) p {
+.advantages__list li:nth-child(3n + 2) p {
   padding-right: 50px;
 }
 
-.advantages__list li:nth-child(3) p {
+.advantages__list li:nth-child(3n + 3) p {
   padding-right: 89px;
 }
 
@@ -151,21 +151,21 @@
     margin-left: 30px;
   }
 
-  .advantages__list li:nth-child(1) h3::before {
+  .advantages__list li:nth-child(3n + 1) h3::before {
     top: 25px;
     width: 21px;
     height: 26px;
     background-size: 21px 26px;
   }
 
-  .advantages__list li:nth-child(2) h3::before {
+  .advantages__list li:nth-child(3n + 2) h3::before {
     top: 29px;
     width: 33px;
     height: 19px;
     background-size: 33px 19px;
   }
 
-  .advantages__list li:nth-child(3) h3::before {
+  .advantages__list li:nth-child(3n + 3) h3::before {
     top: 32px;
     width: 38px;
     height: 13px;
@@ -182,11 +182,11 @@
     line-height: 20px;
   }
 
-  .advantages__list li:nth-child(2) p {
+  .advantages__list li:nth-child(3n + 2) p {
     padding-right: 20px;
   }
 
-  .advantages__list li:nth-child(3) p {
+  .advantages__list li:nth-child(3n + 3) p {
     padding-right: 15px;
   }
 }
@@ -226,19 +226,19 @@
     padding-top: 71px;
   }
 
-  .advantages__list li:nth-child(1) {
+  .advantages__list li:nth-child(3n + 1) {
     margin-top: 0;
   }
 
-  .advantages__list li:nth-child(1) h3::before {
+  .advantages__list li:nth-child(3n + 1) h3::before {
     top: 25px;
   }
 
-  .advantages__list li:nth-child(2) h3::before {
+  .advantages__list li:nth-child(3n + 2) h3::before {
     top: 28px;
   }
 
-  .advantages__list li:nth-child(3) h3::before {
+  .advantages__list li:nth-child(3n + 3) h3::before {
     top: 31px;
   }
 
@@ -246,7 +246,7 @@
     line-height: 25.2px;
   }
 
-  .advantages__list li:nth-child(2) h3 {
+  .advantages__list li:nth-child(3n + 2) h3 {
     padding-right: 70px;
   }
 
@@ -255,11 +255,11 @@
     padding-right: 20px;
   }
 
-  .advantages__list li:nth-child(2) p {
+  .advantages__list li:nth-child(3n + 2) p {
     padding-right: 25px;
   }
 
-  .advantages__list li:nth-child(3) p {
+  .advantages__list li:nth-child(3n + 3) p {
     padding-right: 15px;
   }
 }

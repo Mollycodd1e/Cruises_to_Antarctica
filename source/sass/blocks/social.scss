@@ -1,14 +1,16 @@
 .social {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
 }
 
 .social li {
   margin-left: 33px;
+  margin-top: 1px;
   cursor: pointer;
 }
 
-.social li:nth-child(1) {
+.social li:nth-child(3n + 1) {
   margin-left: 0;
 }
 

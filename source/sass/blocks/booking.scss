@@ -45,7 +45,7 @@
   color: #011c40;
 }
 
-.booking__form {
+.booking__form-wrapper form {
   display: flex;
   align-content: center;
   width: 403px;
@@ -59,14 +59,14 @@
   background-color: #011c40;
 }
 
-.booking__form fieldset {
+.booking__form-wrapper fieldset {
   margin: 0;
   padding: 0;
   margin-top: 45px;
   border: none;
 }
 
-.booking__form input::placeholder {
+.booking__form-wrapper input::placeholder {
   padding-left: 10px;
   font-size: 14px;
   line-height: 21px;
@@ -74,7 +74,7 @@
   color: #011c40;
 }
 
-.booking__form legend {
+.booking__form-wrapper legend {
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
@@ -113,9 +113,14 @@
 .booking__checkbox-wrapper label {
   font-size: 10px;
   line-height: 13px;
+  padding-left: 25px;
 
   color: #f9fbfd;
   cursor: pointer;
+}
+
+.booking__checkbox-wrapper input {
+  display: none;
 }
 
 .booking__checkbox-wrapper input:not(:checked) + label::before {
@@ -148,7 +153,7 @@
   cursor: pointer;
 }
 
-.booking__form button {
+.booking__form-wrapper button {
   width: 303px;
   margin-top: 26px;
   font-size: 14px;
@@ -195,9 +200,13 @@
     line-height: 27px;
   }
 
-  .booking__form {
+  .booking__form-wrapper form {
     margin: 0 auto;
     margin-top: 51px;
+  }
+
+  .booking__checkbox-wrapper label {
+    padding-left: 25px;
   }
 }
 
@@ -237,7 +246,7 @@
     width: 278px;
   }
 
-  .booking__form {
+  .booking__form-wrapper form {
     width: 290px;
     padding-left: 30px;
     padding-right: 30px;
@@ -245,7 +254,7 @@
     padding-bottom: 40px;
   }
 
-  .booking__form legend {
+  .booking__form-wrapper legend {
     line-height: 25px;
     text-align: center;
     margin-top: 36px;
@@ -257,12 +266,12 @@
 
   .booking__checkbox-wrapper label {
     display: inline-block;
-    vertical-align: center;
+    vertical-align: middle;
     line-height: 12px;
-    padding-left: 7px;
+    padding-left: 30px;
   }
 
-  .booking__form fieldset {
+  .booking__form-wrapper fieldset {
     margin-top: 36px;
   }
 
@@ -287,7 +296,7 @@
     padding-bottom: 12px;
   }
 
-  .booking__form button {
+  .booking__form-wrapper button {
     width: 230px;
     margin-top: 24px;
   }
