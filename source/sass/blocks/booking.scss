@@ -67,7 +67,6 @@
 }
 
 .booking__form-wrapper input::placeholder {
-  //padding-left: 10px;
   font-size: 14px;
   line-height: 21px;
 
@@ -284,21 +283,21 @@
   }
 
   .booking__name-wrapper input {
-    width: 222px;
+    width: 230px;
     margin-top: 27px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
 
   .booking__phone-wrapper input {
-    width: 222px;
+    width: 230px;
     margin-top: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
   }
 
   .booking__mail-wrapper input {
-    width: 222px;
+    width: 230px;
     margin-top: 20px;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -306,6 +305,6 @@
 
   .booking__form-wrapper button {
     width: 230px;
-    margin-top: 24px;
+    margin-top: 28px;
   }
 }

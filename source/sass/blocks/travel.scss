@@ -2,7 +2,7 @@
   display: flex;
   min-height: 301px;
   margin-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 125px;
   margin-left: 7.54%;
   margin-right: 7.54%;
   align-items: center;
@@ -19,6 +19,7 @@
 .travel__title-wrapper {
   box-sizing: border-box;
   padding-right: 64px;
+  align-self: center;
 }
 
 .travel__title-wrapper h2 {
@@ -56,6 +57,7 @@
   .travel img {
     width: 324px;
     height: 264px;
+    margin-top: 7px;
   }
 
   .travel__title-wrapper h2 {
