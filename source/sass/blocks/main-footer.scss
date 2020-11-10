@@ -41,7 +41,7 @@
   max-width: 626px;
 }
 
-.main-footer__list li:first-child {
+.main-footer__list li:nth-child(4n + 1) {
   margin-left: 0;
 }
 
@@ -84,6 +84,10 @@
   .main-footer__list-wrapper {
     margin-left: 25px;
     margin-top: -6px;
+  }
+
+  .main-footer__list {
+    margin-top: 0;
   }
 
   .main-footer__list li {

@@ -111,6 +111,16 @@
   box-sizing: border-box;
 }
 
+.booking__name-wrapper input:hover,
+.booking__name-wrapper input:focus,
+.booking__mail-wrapper input:hover,
+.booking__mail-wrapper input:focus,
+.booking__phone-wrapper input:hover,
+.booking__phone-wrapper input:focus {
+  border: 2px solid #00bfff;
+  background-color: #ccfeff;
+}
+
 .booking__checkbox-wrapper {
   max-width: 305px;
   margin-top: 18px;
