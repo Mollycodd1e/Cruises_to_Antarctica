@@ -89,7 +89,7 @@
     <section class="cruises">
       <h2 class="cruises__title">Ближайшие круизы</h2>
       <ul class="cruises__list">
-        <li>
+        <li tabindex="0">
           <h3>Круиз “Астория”</h3>
           <picture>
             <!-- 1х: 270px; 2x: 540px -->
@@ -114,7 +114,7 @@
             <a href="#">Забронировать</a>
           </div>
         </li>
-        <li>
+        <li tabindex="0">
           <h3>Круиз “Элайн”</h3>
           <picture>
             <!-- 1х: 270px; 2x: 540px -->
@@ -139,7 +139,7 @@
             <a href="#">Забронировать</a>
           </div>
         </li>
-        <li>
+        <li tabindex="0">
           <h3>Круиз “Атлантис”</h3>
           <picture>
             <!-- 1х: 270px; 2x: 540px -->
@@ -164,7 +164,7 @@
             <a href="#">Забронировать</a>
           </div>
         </li>
-        <li>
+        <li tabindex="0">
           <h3>Круиз “Одиссей”</h3>
           <picture>
             <!-- 1х: 270px; 2x: 540px -->
@@ -189,7 +189,7 @@
             <a href="#">Забронировать</a>
           </div>
         </li>
-        <li>
+        <li tabindex="0">
           <h3>Круиз “Олимпия”</h3>
           <picture>
             <!-- 1х: 270px; 2x: 540px -->
@@ -214,7 +214,7 @@
             <a href="#">Забронировать</a>
           </div>
         </li>
-        <li>
+        <li tabindex="0">
           <h3>Круиз “Аврора”</h3>
           <picture>
             <!-- 1х: 270px; 2x: 540px -->
@@ -239,7 +239,7 @@
             <a href="#">Забронировать</a>
           </div>
         </li>
-        <li>
+        <li tabindex="0">
           <h3>Круиз “Леонор”</h3>
           <picture>
             <!-- 1х: 270px; 2x: 540px -->
@@ -264,7 +264,7 @@
             <a href="#">Забронировать</a>
           </div>
         </li>
-        <li>
+        <li tabindex="0">
           <h3>Круиз “Минион - 1”</h3>
           <picture>
             <!-- 1х: 270px; 2x: 540px -->
@@ -305,7 +305,7 @@
               <label for="name" class="visually-hidden">Имя</label>
             </div>
             <div class="booking__phone-wrapper">
-              <input type="tel" id="phone" name="phone" pattern="[8]{1}[0-9]{10}" title="Пример: 8********** (10 цифр)" placeholder="Телефон" minlength="11" required="">
+              <input type="tel" id="phone" name="phone" pattern="^((8|\+7)\d{3}\d{7}]" title="Пример: (+7/8)********** (10 цифр)" placeholder="Телефон" maxlength="12" required="">
               <label for="phone" class="visually-hidden">Телефон</label>
             </div>
             <div class="booking__mail-wrapper">
@@ -313,8 +313,8 @@
               <label for="email" class="visually-hidden">Почта</label>
             </div>
             <div class="booking__checkbox-wrapper">
-              <input type="checkbox" name="data-processing" id="data-processing" checked="" required="">
-              <label for="data-processing" tabindex="0">Я согласен на обработку моих&nbsp;персональных данных</label>
+              <input class="visually-hidden" type="checkbox" name="data-processing" id="data-processing" checked="" required="">
+              <label for="data-processing">Я согласен на обработку моих&nbsp;персональных данных</label>
             </div>
             <button type="submit">Оставить заявку</button>
           </fieldset>

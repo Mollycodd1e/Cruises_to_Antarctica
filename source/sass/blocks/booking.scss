@@ -136,10 +136,6 @@
   cursor: pointer;
 }
 
-.booking__checkbox-wrapper input {
-  display: none;
-}
-
 .booking__checkbox-wrapper input:not(:checked) + label::before {
   content: "";
 
@@ -169,6 +165,11 @@
   background-color: #ffffff;
   cursor: pointer;
 }
+
+.booking__checkbox-wrapper input:checked + label:hover::after,
+.booking__checkbox-wrapper input:not(:checked) + label:hover::before {
+  background-color: #ccfeff;
+};
 
 .booking__form-wrapper button {
   width: 303px;

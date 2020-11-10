@@ -49,8 +49,13 @@
   opacity: 0;
 }
 
-.cruises__list li:hover .cruises__wrapper {
+.cruises__list li:hover .cruises__wrapper,
+.cruises__list li:focus .cruises__wrapper {
   opacity: 1;
+}
+
+.cruises__list li:focus {
+  outline: none;
 }
 
 @media (max-width: $tablet-width-only) {
