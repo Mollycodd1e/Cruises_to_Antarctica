@@ -4,14 +4,14 @@
   padding-right: 7.54%;
   padding-left: 7.54%;
   min-height: 562px;
-  background-image: url("../../img/background_desktop.jpg");
+  background-image: url("../img/background_desktop.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
   color: #011c40;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/background_desktop@2x.jpg");
+    background-image: url("../img/background_desktop@2x.jpg");
     background-size: cover;
   }
 }
@@ -26,6 +26,7 @@
 
 .advantages__list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   max-width: 1160px;
   margin: 0 auto;
@@ -39,8 +40,10 @@
   width: 360px;
   padding-top: 80px;
   padding-left: 30px;
+  padding-bottom: 7px;
   min-height: 241px;
   margin-left: 40px;
+  margin-bottom: 15px;
 
   background-color: #f9fbfd;
 }
@@ -120,11 +123,11 @@
     padding-left: 45px;
     padding-right: 45px;
     min-height: 588px;
-    background-image: url("../../img/background_tablet.jpg");
+    background-image: url("../img/background_tablet.jpg");
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/background_tablet@2x.jpg");
+      background-image: url("../img/background_tablet@2x.jpg");
       background-size: cover;
     }
   }
@@ -197,11 +200,11 @@
     padding-top: 57px;
     padding-bottom: 31px;
     min-height: 997px;
-    background-image: url("../../img/background_mobile.jpg");
+    background-image: url("../img/background_mobile.jpg");
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/background_mobile@2x.jpg");
+      background-image: url("../img/background_mobile@2x.jpg");
       background-size: cover;
     }
   }

@@ -3,14 +3,14 @@
   padding-top: 50px;
   padding-bottom: 50px;
   min-height: 555px;
-  background-image: url("../../img/form_background_desktop.jpg");
+  background-image: url("../img/form_background_desktop.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   background-color: #00bfff;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../../img/form_background_desktop@2x.jpg");
+    background-image: url("../img/form_background_desktop@2x.jpg");
     background-position: center center;
     background-size: cover;
   }
@@ -152,7 +152,7 @@
   width: 18px;
   height: 18px;
 
-  background-image: url("../../img/icon-mark.svg");
+  background-image: url("../img/icon-mark.svg");
   background-repeat: no-repeat;
   background-size: 10px 6px;
   background-position: center center;
@@ -168,18 +168,20 @@
   font-weight: 600;
   padding-top: 9px;
   padding-bottom: 9px;
+
+  cursor: pointer;
 }
 
 @media (max-width: $tablet-width-only) {
   .booking {
     padding-top: 95px;
     min-height: 805px;
-    background-image: url("../../img/form_background_tablet.jpg");
+    background-image: url("../img/form_background_tablet.jpg");
     background-position: center center;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/form_background_tablet@2x.jpg");
+      background-image: url("../img/form_background_tablet@2x.jpg");
       background-position: center center;
       background-size: cover;
     }
@@ -221,12 +223,12 @@
   .booking {
     padding-top: 65px;
     min-height: 760px;
-    background-image: url("../../img/form_background_mobile.jpg");
+    background-image: url("../img/form_background_mobile.jpg");
     background-position: center center;
     background-size: cover;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../../img/form_background_mobile@2x.jpg");
+      background-image: url("../img/form_background_mobile@2x.jpg");
       background-position: center center;
       background-size: cover;
     }
