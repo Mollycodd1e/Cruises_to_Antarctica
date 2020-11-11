@@ -32,6 +32,7 @@
   margin: 0 auto;
   margin-top: 49px;
   list-style: none;
+  white-space: normal;
 }
 
 .advantages__list li {
@@ -110,16 +111,16 @@
   white-space: pre-wrap;
 }
 
-.advantages__list {
-  white-space: normal;
-}
-
 .advantages__list li:nth-child(3n + 2) p {
   padding-right: 50px;
 }
 
 .advantages__list li:nth-child(3n + 3) p {
   padding-right: 89px;
+}
+
+.advantages__list span {
+  white-space: normal;
 }
 
 @media (max-width: $tablet-width-only) {
@@ -262,7 +263,7 @@
   }
 
   .advantages__list p {
-    margin-top: 11px;
+    margin-top: 10px;
     padding-right: 20px;
     white-space: pre-wrap;
   }
@@ -274,5 +275,9 @@
   .advantages__list li:nth-child(3n + 3) p {
     padding-right: 15px;
     width: auto;
+  }
+
+  .advantages__list span {
+    white-space: pre-wrap;
   }
 }

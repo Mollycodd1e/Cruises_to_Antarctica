@@ -2,16 +2,21 @@
 
 (function () {
   var cardsList = document.querySelector('.cruises__list');
-  var allCards = Array.from(cardsList.querySelectorAll('li'));
-  var allButtons = Array.from(cardsList.querySelectorAll('a'));
 
-  var focusButton = function (cards,buttons) {
-    cards.addEventListener('focus', function () {
-      buttons.focus();
-    })
-  }
+  if (document.querySelector('.cruises__list')) {
 
-  for (var i = 1; i < allCards.length -1; i++) {
-    focusButton(allCards[i],allButtons[i]);
+    var allCards = cardsList.querySelectorAll('li');
+    var allButtons = cardsList.querySelectorAll('a');
+
+    var getFocus = function (card) {
+      card.addEventListener('focus', function () {
+        allButtons[i].focus();
+        card[i].style = 'opacity: 1';
+      });
+    };
+
+    for (var i = 0; i < allCards.length; i++) {
+      getFocus(allCards[i]);
+    }
   }
 })();

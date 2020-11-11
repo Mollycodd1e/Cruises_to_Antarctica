@@ -67,6 +67,7 @@
 }
 
 .booking__form-wrapper input::placeholder {
+  appearance: none;
   font-size: 14px;
   line-height: 21px;
 
@@ -85,6 +86,7 @@
 }
 
 .booking__name-wrapper input {
+  appearance: none;
   width: 303px;
   margin-top: 27px;
   padding-top: 12px;
@@ -94,6 +96,7 @@
 }
 
 .booking__phone-wrapper input {
+  appearance: none;
   width: 303px;
   margin-top: 20px;
   padding-top: 12px;
@@ -103,6 +106,7 @@
 }
 
 .booking__mail-wrapper input {
+  appearance: none;
   width: 303px;
   margin-top: 20px;
   padding-top: 12px;
@@ -169,9 +173,10 @@
 .booking__checkbox-wrapper input:checked + label:hover::after,
 .booking__checkbox-wrapper input:not(:checked) + label:hover::before {
   background-color: #ccfeff;
-};
+}
 
 .booking__form-wrapper button {
+  appearance: none;
   width: 303px;
   margin-top: 26px;
   font-size: 14px;
