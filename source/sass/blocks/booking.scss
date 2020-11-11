@@ -52,7 +52,7 @@
   margin-left: 10.54%;
   padding-left: 50px;
   padding-right: 49px;
-  padding-bottom: 49px;
+  padding-bottom: 50px;
   flex-direction: column;
   box-sizing: border-box;
 
@@ -87,30 +87,33 @@
 
 .booking__name-wrapper input {
   appearance: none;
+  border: none;
   width: 303px;
-  margin-top: 27px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  margin-top: 26px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   padding-left: 10px;
   box-sizing: border-box;
 }
 
 .booking__phone-wrapper input {
   appearance: none;
+  border: none;
   width: 303px;
   margin-top: 20px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   padding-left: 10px;
   box-sizing: border-box;
 }
 
 .booking__mail-wrapper input {
   appearance: none;
+  border: none;
   width: 303px;
   margin-top: 20px;
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 14px;
+  padding-bottom: 14px;
   padding-left: 10px;
   box-sizing: border-box;
 }
@@ -121,7 +124,7 @@
 .booking__mail-wrapper input:focus,
 .booking__phone-wrapper input:hover,
 .booking__phone-wrapper input:focus {
-  border: 2px solid #00bfff;
+  border: 0 solid #00bfff;
   background-color: #ccfeff;
 }
 
@@ -177,13 +180,14 @@
 
 .booking__form-wrapper button {
   appearance: none;
+  border: none;
   width: 303px;
   margin-top: 26px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 600;
   padding-top: 9px;
-  padding-bottom: 9px;
+  padding-bottom: 13px;
 
   cursor: pointer;
 }
@@ -303,22 +307,26 @@
   .booking__name-wrapper input {
     width: 230px;
     margin-top: 27px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   .booking__phone-wrapper input {
     width: 230px;
     margin-top: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
 
   .booking__mail-wrapper input {
     width: 230px;
     margin-top: 20px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
+
+  .booking__form-wrapper input::placeholder {
+    padding-left: 7px;
   }
 
   .booking__form-wrapper button {
