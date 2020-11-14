@@ -8,13 +8,16 @@
 }
 
 .cruises__list {
+  box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
   max-width: 1160px;
-  justify-content: space-around;
+  justify-content: space-between;
   padding: 0;
   padding-bottom: 90px;
   margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-top: 49px;
   list-style: none;
 }
@@ -22,7 +25,12 @@
 .cruises__list li {
   position: relative;
   margin-bottom: 23px;
+  margin-left: 0.1%;
   min-height: 386px;
+}
+
+.cruises__list li:nth-child(4n + 1) {
+  margin-left: 0;
 }
 
 .cruises__list h3 {

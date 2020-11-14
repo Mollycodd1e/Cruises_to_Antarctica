@@ -48,6 +48,10 @@
   color: #f9fbfd;
 }
 
+.main-nav__list a:hover {
+  color: #a6d8ed;
+}
+
 @media (max-width: $tablet-width-only) {
   .main-nav__logo {
     width: 38px;

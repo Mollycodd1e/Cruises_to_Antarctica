@@ -38,12 +38,12 @@
 .advantages__list li {
   box-sizing: border-box;
   position: relative;
-  width: 360px;
+  width: 31.01%;
   padding-top: 80px;
   padding-left: 30px;
   padding-bottom: 7px;
   min-height: 241px;
-  margin-left: 40px;
+  margin-left: 3.44%;
   margin-bottom: 15px;
 
   background-color: #f9fbfd;
@@ -238,7 +238,7 @@
     margin-bottom: 0;
   }
 
-  .advantages__list li:nth-child(3n + 1) {
+  .advantages__list li:first-child {
     margin-top: 0;
   }
 

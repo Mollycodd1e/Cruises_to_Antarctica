@@ -125,7 +125,7 @@
 .booking__phone-wrapper input:hover,
 .booking__phone-wrapper input:focus {
   border: 0 solid #00bfff;
-  background-color: #ccfeff;
+  background-color: #a6d8ed;
 }
 
 .booking__checkbox-wrapper {
@@ -175,7 +175,7 @@
 
 .booking__checkbox-wrapper input:checked + label:hover::after,
 .booking__checkbox-wrapper input:not(:checked) + label:hover::before {
-  background-color: #ccfeff;
+  background-color: #a6d8ed;
 }
 
 .booking__form-wrapper button {
