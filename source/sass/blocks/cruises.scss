@@ -25,24 +25,29 @@
 .cruises__list li {
   position: relative;
   margin-bottom: 23px;
-  margin-left: 0.1%;
+  padding-left: 10px;
   min-height: 386px;
 }
 
 .cruises__list li:nth-child(4n + 1) {
   margin-left: 0;
+  padding-left: 0;
 }
 
 .cruises__list h3 {
   position: absolute;
   margin: 0;
   bottom: 30px;
-  left: 30px;
+  left: 40px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 
   color: #f9fbfd;
+}
+
+li:nth-child(4n + 1) h3 {
+  left: 30px;
 }
 
 .cruises__wrapper {
