@@ -94,6 +94,8 @@
   padding-bottom: 14px;
   padding-left: 10px;
   box-sizing: border-box;
+
+  background-color: #f9fbfd;
 }
 
 .booking__phone-wrapper input {
@@ -105,6 +107,8 @@
   padding-bottom: 14px;
   padding-left: 10px;
   box-sizing: border-box;
+
+  background-color: #f9fbfd;
 }
 
 .booking__mail-wrapper input {
@@ -116,6 +120,8 @@
   padding-bottom: 14px;
   padding-left: 10px;
   box-sizing: border-box;
+
+  background-color: #f9fbfd;
 }
 
 .booking__name-wrapper input:hover,
@@ -188,8 +194,10 @@
   font-weight: 600;
   padding-top: 9px;
   padding-bottom: 13px;
-
   cursor: pointer;
+
+  color: #011c40;
+  background-color: #f9fbfd;
 }
 
 @media (max-width: $tablet-width-only) {

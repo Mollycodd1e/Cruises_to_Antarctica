@@ -48,7 +48,8 @@
   color: #f9fbfd;
 }
 
-.main-nav__list a:hover {
+.main-nav__list a:hover,
+.main-nav__list a:focus {
   color: #a6d8ed;
 }
 

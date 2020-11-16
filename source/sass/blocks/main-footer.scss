@@ -62,7 +62,8 @@
   color: #f9fbfd;
 }
 
-.main-footer__list a:hover {
+.main-footer__list a:hover,
+.main-footer__list a:focus {
   color: #a6d8ed;
 }
 
