@@ -11,13 +11,12 @@
   box-sizing: border-box;
   display: flex;
   flex-wrap: wrap;
-  max-width: 1160px;
+  max-width: 1170px;
   justify-content: space-between;
   padding: 0;
   padding-bottom: 90px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
   margin-top: 49px;
   list-style: none;
 }
@@ -25,29 +24,24 @@
 .cruises__list li {
   position: relative;
   margin-bottom: 23px;
-  padding-left: 10px;
+  margin-right: 1.7%;
   min-height: 386px;
 }
 
 .cruises__list li:nth-child(4n + 1) {
   margin-left: 0;
-  padding-left: 0;
 }
 
 .cruises__list h3 {
   position: absolute;
   margin: 0;
   bottom: 30px;
-  left: 40px;
+  left: 30px;
   font-size: 18px;
   line-height: 27px;
   font-weight: 500;
 
   color: #f9fbfd;
-}
-
-li:nth-child(4n + 1) h3 {
-  left: 30px;
 }
 
 .cruises__wrapper {
