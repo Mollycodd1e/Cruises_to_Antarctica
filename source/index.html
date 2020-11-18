@@ -301,7 +301,7 @@
           <fieldset>
             <legend>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с вами в&nbsp;ближайшее время</legend>
             <div class="booking__name-wrapper">
-              <input type="text" name="name" id="name" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё\s]{2,64}" title="Минимум 2 буквы любого алфавита" required>
+              <input type="text" name="name" id="name" placeholder="Имя" pattern="[A-Za-zА-Яа-яЁё\s]{2,64}" minlength="2" maxlength="64" title="Минимум 2 буквы любого алфавита, максимум 64" required>
               <label for="name" class="visually-hidden">Имя</label>
             </div>
             <div class="booking__phone-wrapper">
